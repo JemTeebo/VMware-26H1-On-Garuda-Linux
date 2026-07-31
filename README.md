@@ -1,40 +1,48 @@
 # VMware-26H1-On-Garuda-Linux
 
-I decided to put my first guide up here in case someone needs to do the same, I had to do a fair amount of searching to get this to work the way I wanted it to. I have a tendency to over complicate things when tinkering.
+I decided to put my first guide up here in case someone needs to do the same. I had to do a fair amount of searching to shoehorn/ I guess brute force it to work in my own way. 
 
-There is a method whereas the AUR maintainers have already patched VMware 26.x for new kernels.
+This is also a place for me do document my tinkering discoveries so I can refer to them when I undoubtedly mess up my system and need to do it again! 
+
+There is a method whereas the AUR maintainers have already patched VMWare 26.x for new kernels, 100% working by the way. 
 
 **Installation:**
 ```
 paru -S vmware-workstation
+```
+```
 paru -S vmware-host-modules
 ```
-But... where's the fun in that! I already installed the .bundle from broadcom! This is an Ewok battle-tested guide for running VMware Workstation 26H1 (build 25388281) on Arch Linux / Garuda Linux with linux‑zen kernel 7.1.5-zen1-2-zen
+But... where's the fun in that!
 
-# Overview:
+I already installed the .bundle from broadcom! and I do like to find other ways of doing things.
+
+This is an Ewok battle-tested guide for running VMware Workstation 26H1 (build 25388281) on Arch Linux / Garuda Linux with linux‑zen kernel 7.1.5-zen1-2-zen
+
+# Overview
 
 VMware Workstation 26H1 introduces updated kernel modules (vmmon and vmnet) version 418.x, which do not automatically build on Arch/Garuda’s latest kernels.
 
-**This guide covers:**
+**This guide covers**
 
   Installing VMware Workstation 26H1
-  
+  <br />
   Installing matching kernel headers
-  
+  <br />
   Using DKMS to build correct 418.x modules
-  
+  <br />
   Verifying module versions and load state
-
-**Requirements:**
+  
+**Requirements**
 
   Arch Linux or Garuda Linux
-  
+  <br />
   linux‑zen kernel (example: 7.1.5-zen1-2-zen)
-  
+  <br />
   Matching linux-zen-headers package
-  
+  <br />
   VMware Workstation 26H1 .bundle installer
-  
+  <br />
   AUR helper (paru recommended)
 
 # Why VMware Fails on Arch/Garuda
@@ -84,6 +92,8 @@ sudo vmware-modconfig --console --install-all
 Check module versions
 ```
 modinfo vmmon | grep version
+```
+```
 modinfo vmnet | grep version
 ```
 version: 418.x.x
@@ -91,21 +101,31 @@ version: 418.x.x
 Check modules are loaded
 ```
 lsmod | grep vmmon
+```
+```
 lsmod | grep vmnet
 ```
+
 Restart VMware services
 ```
 sudo systemctl restart vmware-networks.service
+```
+```
 sudo systemctl restart vmware-usbarbitrator.service
 ```
+
 Start VMWare, have fun building VMs on Garuda/Arch linux.
 
 
-Additional Resources
+Additional resources and references
 
-    VMware Workstation Documentation
-    Arch Wiki: VMware
-    Garuda Linux Kernel Info
+  [VMware Workstation Documentation](https://techdocs.broadcom.com/us/en/vmware-cis/desktop-hypervisors/workstation-pro/26H1/using-vmware-workstation-pro.html)
+  <br />
+  [ Arch Wiki: VMware](https://wiki.archlinux.org/title/VMware)
+  <br />
+  [Garuda Linux Kernel Info](https://garudalinux.org/installation)
+  <br />
+  [ mkubecek vmware-host-moduleshttps](https://github.com/mkubecek/vmware-host-modules)
 
 I hope this guide helped you if you found it.
 
