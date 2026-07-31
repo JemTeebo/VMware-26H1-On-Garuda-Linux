@@ -83,11 +83,9 @@ paru -S vmware-host-modules
   
 This builds 418.x modules using VMware’s own source tarballs.
 
-5. Rebuild VMware modules
-```
-sudo vmware-modconfig --console --install-all
-```
-6. Verification
+5. Open VMWare, you will be asked to install/compile the modules, go ahead and do that.
+   
+7. Verification
 
 Check module versions
 ```
