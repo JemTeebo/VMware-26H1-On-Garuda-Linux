@@ -121,7 +121,7 @@ Additional resources and references
   <br />
   [ Arch Wiki: VMware](https://wiki.archlinux.org/title/VMware)
   <br />
-  [Garuda Linux Kernel Info](https://garudalinux.org/installation)
+  [Garuda Linux Info](https://garudalinux.org/installation)
   <br />
   [ mkubecek vmware-host-moduleshttps](https://github.com/mkubecek/vmware-host-modules)
 
