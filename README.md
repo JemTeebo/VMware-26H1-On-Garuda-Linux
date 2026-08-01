@@ -28,9 +28,7 @@ VMware Workstation 26H1 introduces updated kernel modules (vmmon and vmnet) vers
   Installing VMware Workstation 26H1
   <br />
   Installing matching kernel headers
-  <br />
-  Using DKMS to build correct 418.x modules
-  <br />
+    <br />
   Verifying module versions and load state
   
 **Requirements**
