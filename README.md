@@ -40,7 +40,7 @@ Additionally, VMware cannot build modules if kernel headers are missing or misma
 
 # My Installation Steps
 
-Download VMware-Workstation-Full-26H1-25388281.x86_64.bundle from [broadcom.com](https://www.broadcom.com/) you will need t setup an account.
+Download VMware-Workstation-Full-26H1-25388281.x86_64.bundle from [broadcom.com](https://www.broadcom.com/) you will need to setup an account.
 
 1. Install VMware Workstation 26H1 'if not already installed'
    Open Terminal/konsole and navigate to the foler containing the .bundle file to run the commands.
