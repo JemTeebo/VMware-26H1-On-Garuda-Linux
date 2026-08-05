@@ -4,17 +4,6 @@ I decided to put my first guide up here in case someone needs to do the same. I 
 
 This is also a place for me do document my tinkering discoveries so I can refer to them when I undoubtedly mess up my system and need to do it again! 
 
-There is a method whereas the AUR maintainers have already patched VMWare 26.x for new kernels, 100% working by the way. 
-
-**Installation:**
-```
-paru -S vmware-workstation
-```
-```
-paru -S vmware-host-modules
-```
-But... where's the fun in that!
-
 I already installed the .bundle from broadcom! and I do like to find other ways of doing things.
 
 This is an Ewok battle-tested guide for running VMware Workstation 26H1 (build 25388281) on Arch Linux / Garuda Linux with linux‑zen kernel 7.1.5-zen1-2-zen
