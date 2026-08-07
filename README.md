@@ -2,7 +2,7 @@
 
 I decided to put my first guide up here in case someone needs to do the same. I had to do a fair amount of searching to shoehorn/ I guess brute force it to work in my own way. 
 
-This is also a place for me do document my tinkering discoveries so I can refer to them when I undoubtedly mess up my system and need to do it again! 
+This is also a place for me do document my tinkering and discoveries so I can refer to them when I undoubtedly mess up my system and need to do it again! 
 
 I already installed the .bundle from broadcom! and I do like to find other ways of doing things.
 
